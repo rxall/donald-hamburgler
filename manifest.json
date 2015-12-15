@@ -1,0 +1,21 @@
+{
+"manifest_version": 1,
+    "name": "Donald Hamburgler",
+    "description": "Replace Trump with Hamburgler to make the news easier to read",
+    "version": "0.6",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+	"icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" }
+}
